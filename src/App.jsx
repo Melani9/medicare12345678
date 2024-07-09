@@ -11,7 +11,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Sidebar from "./components/Sidebar";
 import AddNewAdmin from "./components/AddNewAdmin";
-import patientDashboard from "./components/patientDashboard";
+//import patientDashboard from "./components/patientDashboard";
 import "./App.css";
 
 const App = () => {
@@ -39,11 +39,9 @@ const App = () => {
 
   return (
     <Router>
-      <Route path="/patientDashboard" component={patientDashboard} />
       <Sidebar />
       <Routes>
         <Route path="/" element={<Dashboard />} />
-        
         <Route path="/login" element={<Login />} />
         <Route path="/doctor/addnew" element={<AddNewDoctor />} />
         <Route path="/admin/addnew" element={<AddNewAdmin />} />
